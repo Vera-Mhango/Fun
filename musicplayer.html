@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musicplayer.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa fa-reorder"></i>
+                </div>
+            </nav>
+            <img src="sombr.jpeg" class="songcover">
+            <h1>back to friends [slowed]</h1>
+            <p>somber</p>
+
+            <audio controls id="song">
+                <source src="sombr - back to friends [ slowed  reverb ] (lyrics).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range"value="0" id="progress">
+
+            <div class="controls">
+                <div >
+                    <i class="fa fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa fa-play" id="ctrlicon"></i>
+                </div>
+                <div>
+                    <i class="fa fa-forward"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="musicplayer.js"></script>
+</body>
+</html>
